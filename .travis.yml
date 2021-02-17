@@ -1,5 +1,6 @@
+
 language: java
 
 jdk: oraclejdk14
 
-script: mvn clean verify
+script: mvn clean
