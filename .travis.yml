@@ -1,7 +1,5 @@
 language: java
 
-sudo: false
-
-jdk: oraclejdk8
+jdk: oraclejdk14
 
 script: mvn clean verify
