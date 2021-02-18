@@ -2,8 +2,6 @@ language: java
 
 jdk: oraclejdk14
 
-script: mvn clean
-
 deploy:
   provider: heroku
   api_key:
