@@ -15,8 +15,6 @@ deploy:
     secure: "6058df64-0629-4bb1-bf17-18a5d475380d"
   app:
     master: spring-reg
-    development: travis_db
-    on: development
 
 addons:
   postgresql: "10"
