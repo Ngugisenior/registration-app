@@ -1,10 +1,5 @@
 language: java
 
-osx: ubuntu
-
-services:
-  - postgresql
-
 jdk: oraclejdk14
 
 script: mvn clean
@@ -15,20 +10,5 @@ deploy:
     secure: "6058df64-0629-4bb1-bf17-18a5d475380d"
   app:
     master: spring-reg
-
-addons:
-  postgresql: "10"
-  apt:
-    packages:
-      - postgresql-10
-      - postgresql-client-10
-env:
-  global:
-    - PGPORT=5433
-
-postgres:
-  adapter: postgresql
-  database: registration
-  username: postgres
 
 
