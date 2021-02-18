@@ -5,9 +5,9 @@ server:
 
 spring:
   datasource:
-    password: +254Vornex
+    password:
     url: jdbc:postgresql://localhost:5432/registration
-    username: pyrax
+    username: postgres
 
   jpa:
     hibernate:

@@ -23,3 +23,6 @@ addons:
 env:
   global:
     - PGPORT=5433
+
+before_script:
+  - psql -c 'create database registration;' -U postgres
