@@ -21,9 +21,10 @@ addons:
     packages:
       - postgresql-10
       - postgresql-client-10
+before_script:
+  - psql -c 'create database registration;' -U postgres
+
 env:
   global:
     - PGPORT=5433
 
-before_script:
-  - psql -c 'create database registration;' -U postgres
