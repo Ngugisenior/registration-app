@@ -2,10 +2,4 @@ language: java
 
 jdk: oraclejdk14
 
-deploy:
-  provider: heroku
-  api_key: "6058df64-0629-4bb1-bf17-18a5d475380d"
-  app:
-    master: spring-reg
-
 
