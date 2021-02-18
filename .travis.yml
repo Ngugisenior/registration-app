@@ -1,5 +1,9 @@
-
 language: java
+
+osx: ubuntu
+
+services:
+  - postgresql
 
 jdk: oraclejdk14
 
@@ -14,10 +18,6 @@ deploy:
     development: travis_db
     on: development
 
-
-services:
-  - postgresql
-
 addons:
   postgresql: "10"
   apt:
@@ -27,7 +27,6 @@ addons:
 env:
   global:
     - PGPORT=5433
-
 
 postgres:
   adapter: postgresql
