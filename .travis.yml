@@ -4,8 +4,7 @@ language: java
 jdk: oraclejdk14
 
 script: mvn clean
-services:
-  - postgresql
+
 deploy:
   provider: heroku
   api_key:
@@ -14,6 +13,10 @@ deploy:
     master: spring-reg
     development: travis_db
     on: development
+
+
+services:
+  - postgresql
 
 addons:
   postgresql: "10"
@@ -25,6 +28,10 @@ env:
   global:
     - PGPORT=5433
 
-before_script:
-  - psql -c 'create database registration;' -U postgres
+
+postgres:
+  adapter: postgresql
+  database: registration
+  username: postgres
+
 
