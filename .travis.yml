@@ -4,7 +4,8 @@ language: java
 jdk: oraclejdk14
 
 script: mvn clean
-
+services:
+  - postgresql
 deploy:
   provider: heroku
   api_key:
