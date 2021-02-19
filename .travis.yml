@@ -20,8 +20,8 @@ env:
     - DB_PASSWORD=+254Vornex
 
 before_script:
-  - psql --command="CREATE USER ${DB_USER} with encrypted password ${DB_PASSWORD};"
-  - psql --command="CREATE DATABASE ${DB_NAME} WITH OWNER = ${DB_USER};"
+  - psql --command='CREATE USER ${DB_USER} with encrypted password ${DB_PASSWORD};'
+  - psql --command='CREATE DATABASE ${DB_NAME} WITH OWNER = ${DB_USER};'
   - psql --dbname=$DB_NAME --file=sql/create-tables.sql
 
 
