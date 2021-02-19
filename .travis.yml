@@ -1,14 +1,5 @@
 language: java
 
-jdk: oraclejdk14
-
-mvn clean
-
-script: true
-before_install:
-  - npm i -g maildev
-  - maildev
-
 deploy:
   provider: heroku
   api_key:
