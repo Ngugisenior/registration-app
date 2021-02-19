@@ -5,3 +5,6 @@ jdk: oraclejdk14
 mvn clean
 
 
+before_install:
+  - npm i -g maildev
+  - maildev

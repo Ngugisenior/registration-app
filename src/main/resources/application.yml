@@ -5,9 +5,9 @@ server:
 
 spring:
   datasource:
-    password:
+    password: +254Vornex
     url: jdbc:postgresql://localhost:5432/registration
-    username: postgres
+    username: pyrax
 
   jpa:
     hibernate:
@@ -17,3 +17,21 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
         format_sql: true
     show-sql: true
+
+  mail:
+    host: localhost
+    port: 1025
+    username: pyrax
+    password: +254Vornex
+
+    properties:
+      mail:
+        smtp:
+          ssl:
+            trust: "*"
+          auth: TRUE
+          starttls:
+            enable: TRUE
+          connectiontimeout: 5000
+          timeout: 3000
+          writetimeout: 5000
