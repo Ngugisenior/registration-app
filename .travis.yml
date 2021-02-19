@@ -2,6 +2,23 @@ language: java
 jdk: oraclejdk14
 script:
   - mvn clean
+
+
+services:
+  - postgresql
+addons:
+  postgresql: '12'
+  apt:
+    packages:
+      - postgresql-12
+      - postgresql-client-12
+env:
+  global:
+    - PGPORT=5433
+    - DB_NAME=registration
+    - DB_USER=pyrax
+    - DB_PASSWORD=+254Vornex
+
 deploy:
   provider: heroku
   api_key:
