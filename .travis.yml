@@ -2,9 +2,6 @@ language: java
 jdk: oraclejdk14
 script:
   - mvn clean
-  - mvn validate
-  - mvn compile
-  - mvn package
   - mvn install
 deploy:
   provider: heroku
