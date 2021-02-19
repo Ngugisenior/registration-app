@@ -28,7 +28,7 @@ before_script:
 deploy:
   provider: heroku
   api_key:
-    secure: "dHjDeU9TetfEBtASPH2ZRDsX8/ILB8ewtzxFYrPMW8+0c83IKwDmcp5snwFfyhPiXLDI/hwePnrc38LCH554ofjF0oWL5Z2O0L0PEtLqBycFqaqSjhGYxIjK6fXstrKWp2XEjZDqFqVY+erw555hOkgPyXUZyJL8APJAD1+txmul6FMh6NJB/Rm3CoCXO7Sr4P3F0ecijU/OnP0Gw0Wlw97opo2/Kw2rNo79pMnHGIJyhwYl2b9ugX48IlPyH3uG9AknpqqsfHPm8EqpkHKlCNZKI8X2rK2qBjV+f6VA3i7LdvzwCc1x6LKb+j7x6CVHuPiXy9QQlVOyb9LHCGrijXfuGHC2HhPcYP1mqPBCHVH5FaR3cjQBuc+BugqIv2384H9ERiqa5BY6CvdLd7tGVkV95ZLNt9BR3j3A+bf68zUaxqnc3JOLslASwEs/GMVZf/mZEkZc51MLFHARX2KUyCwX7dFOJgKkpwGRikO4ho1YB4sAk4x1cRqpjjGWx6U3K3OhQNwAcaArmSZ4nJ9souLic2n7ujrIdFLBKj7JAv+YLOo+/2H/v2O7LotGx+nP1UnV/BWkCT0cI2fAz68Tsyk5raED9+ZoHVdyF77YuRte/4BHNrVoU+KJyxYDGQHY5oTfnPtcxTJu/0DKve82i5ADkA12flB6ad+ICJyeHjU="
+    secure: "6058df64-0629-4bb1-bf17-18a5d475380d"
   app: spring-reg
   on:
     branch: master
