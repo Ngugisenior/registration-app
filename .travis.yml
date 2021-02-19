@@ -8,3 +8,11 @@ mvn clean
 before_install:
   - npm i -g maildev
   - maildev
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: "Fy5WT9IpBEkfMuzIiyALABdTSYUnHqz7j/XJn8QqoULEelFnn/BFr8VctWycdEbaKWuZen77rfsY83xKtmu3YjRmMbi7TfR2kU/GUZoq81xdi/xgNiFtpbLQhrsDBsZUtX9Ampwbtc4AHKPM4yPNvyiCn1q1L7zHfEPMwTaTM1pXtaAhP4lb80Ha4WH3dWenuBZp1iKaFCVIIf4H/xOAumm3ykEOp2TgAJJjz+BEu7W20oVKf4x5w0WJKrMONr3sU8ALW1bz8HJAnUGvQIw39Zdaj5FTx0Zew4bs3qzNuml6w+IxtXQy3AcWJky5oH0eOFRw4XALYLI3H6TQ3Rf1JM3QCysDHZybyyBy2Og/7ddytgIe/ju7ky7Mz0ReQkRPMnFbJGGgmrBf2iKE0E+kds+rC90Jzpn8SKSZz7XrQTy7Xi9L9IjfFlhgf9hJziTnSXW93X2Kor8mFYEbFo4LdUgA58/hslsH2gkkRibbzaJ2dPL260jidpJ39uuWyi1sCM7lQd4tIEfoSqcarEtDz/aTn4o9KmGPXW+OnsguM+EQwy8t9S0wJ8ec3J2sr55JwYM232Dir5fbRg4a6jLGXcDYzdVscXgO30DiTHFFFjoii834YJ9xhqG+4t/5sGUMgjArUbtZkrCSkcOv8upbJZPm86MV3+ZZiQOPr+SIHO0="
+  on:
+    tags: true
+    all_branches: true
